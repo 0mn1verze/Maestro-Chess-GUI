@@ -28,7 +28,7 @@ def make_move():
     board = chess.Board(fen)
 
     
-    with chess.polyglot.open_reader("baron30.bin") as reader:
+    with chess.polyglot.open_reader("OPTIMUS2403.bin") as reader:
         if reader.get(board) is not None:
             entry = reader.choice(board)
             return {"fen": board.fen(), 
